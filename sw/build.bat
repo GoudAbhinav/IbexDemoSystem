@@ -7,7 +7,7 @@ set OBJCOPY=riscv-none-elf-objcopy
 if not exist "output" mkdir "output"
 
 echo Compiling C code...
-%CC% -O0 -march=rv32i -mabi=ilp32 -nostartfiles -nostdlib -Ttext=0x00100000 -o output\standard_c.elf boot.S main.c
+%CC% -O0 -march=rv32i -mabi=ilp32 -nostartfiles -nostdlib -Ttext=0x00100080 -o output\standard_c.elf boot.S main.c
 
 if %errorlevel% neq 0 (
     echo Compilation failed!
