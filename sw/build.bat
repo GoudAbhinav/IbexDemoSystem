@@ -1,6 +1,7 @@
 @echo off
-set CC=riscv64-unknown-elf-gcc
-set OBJCOPY=riscv64-unknown-elf-objcopy
+:: CHANGED: Use the correct xPack executable names for Windows
+set CC=riscv-none-elf-gcc
+set OBJCOPY=riscv-none-elf-objcopy
 
 :: Create the output directory if it doesn't exist
 if not exist "output" mkdir "output"

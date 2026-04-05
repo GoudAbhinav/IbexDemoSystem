@@ -2,6 +2,21 @@
 
 This repository contains the hardware and software stack for our Ibex RISC-V processor.
 
+## ⚠️ Prerequisites (READ THIS FIRST)
+To compile the C code, your machine must have the RISC-V GNU Toolchain installed. 
+
+**How to check if you have it:**
+Open a terminal and run `riscv64-unknown-elf-gcc --version` or `riscv-none-elf-gcc --version`. If it prints a version number, skip to Step 1. If it says "command not found," follow the instructions below.
+
+**If you DO NOT have the toolchain:**
+1. Go to the [xPack RISC-V GCC Releases page](https://github.com/xpack-dev-tools/riscv-none-elf-gcc-xpack/releases/).
+2. Download the pre-compiled binary for your system:
+   * **Windows:** Download the `win32-x64.zip` file.
+   * **Linux/WSL:** Download the `linux-x64.tar.gz` file.
+3. Extract the downloaded file into a folder on your machine (e.g., `C:\riscv` for Windows, or `~/riscv` for Linux).
+4. Open the `tools/setup_env.bat` (Windows) or `tools/setup_env.sh` (Linux) file in a text editor.
+5. Change the path inside that script to point to the `bin` folder inside the folder you just extracted.
+
 ## Lab Assignment Instructions
 
 ### Step 1: Add the TA's Code
