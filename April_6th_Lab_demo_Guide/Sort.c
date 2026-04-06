@@ -1,4 +1,4 @@
-int arr[] = {6,4,8,3,5,7,9};
+int arr[] = {6,4,8,3,5};
 
 int main(void) {
     //code to sort the array
