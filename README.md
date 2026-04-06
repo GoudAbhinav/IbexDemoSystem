@@ -13,13 +13,13 @@ Open a terminal and run `riscv64-unknown-elf-gcc --version` or `riscv-none-elf-g
 2. Download the pre-compiled binary for your system:
    * **Windows:** Download the `win32-x64.zip` file.
    * **Linux/WSL:** Download the `linux-x64.tar.gz` file.
-3. Extract the downloaded file into a folder on your machine (e.g., `C:\riscv` for Windows, or `~/riscv` for Linux).
-4. Open the `tools/setup_env.bat` (Windows) or `tools/setup_env.sh` (Linux) file in a text editor.
-5. Change the path inside that script to point to the `bin` folder inside the folder you just extracted.
+3. Extract the downloaded file into a folder on your machine and copy the path of the bin folder (including the bin) from the extracted folder.
+4. Now back to this repo folder, in the `tools/setup_env.bat` (Windows) or `tools/setup_env.sh` (Linux) file in a text editor.
+5. Change the path inside that script to point to the `bin` folder that you copied in step 3.
 
 ## Lab Assignment Instructions
 
-### Step 1: Add the TA's Code
+### Step 1: Add the c code
 1. Navigate to the `sw/` directory.
 2. Replace the contents of `main.c` with the C code provided by the TAs.
 3. Ensure `boot.S` remains untouched.
@@ -29,7 +29,7 @@ Open a terminal and run `riscv64-unknown-elf-gcc --version` or `riscv-none-elf-g
 ### Step 2: Toolchain Setup & Compilation
 
 **For Windows Users:**
-1. Open Command Prompt and run the setup script (edit the path inside the file first to point to your local RISC-V toolchain):
+1. Open Command Prompt and run the setup script (edit the path inside the file first to point to your local RISC-V toolchain if not done already):
    ```cmd
    tools\setup_env.bat
    ```
